@@ -1,9 +1,15 @@
+import Navbar from "@/components/Navbar";
+import UserList from "@/components/UserList";
+
 export default function Home() {
   return (
-    <main>
-      <div>
-        <h1>Hello!</h1>
-      </div>
-    </main>
+    <>
+      <Navbar></Navbar>
+      <main>
+        <div>
+          <UserList></UserList>
+        </div>
+      </main>
+    </>
   );
 }
