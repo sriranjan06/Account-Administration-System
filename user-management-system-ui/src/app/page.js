@@ -1,3 +1,4 @@
+import AddUser from "@/components/AddUser";
 import Navbar from "@/components/Navbar";
 import UserList from "@/components/UserList";
 
@@ -7,7 +8,7 @@ export default function Home() {
       <Navbar></Navbar>
       <main>
         <div>
-          <UserList></UserList>
+          <AddUser></AddUser>
         </div>
       </main>
     </>
