@@ -2,12 +2,15 @@
 
 import { React, useState, useEffect } from "react";
 import User from "./User";
+import EditUser from "./EditUser";
 
-const UserList = () => {
+const UserList = ({ user }) => {
   const USER_API_BASE_URL = "http://localhost:8080/api/v1/users";
 
   const [users, setUsers] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [userId, setUserId] = useState(null);
+  const [responseUser, setResponseUser] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,7 +31,25 @@ const UserList = () => {
     };
 
     fetchData();
-  }, []);
+  }, [user, responseUser]);
+
+  const deleteUser = (e, id) => {
+    e.preventDefault();
+    fetch(USER_API_BASE_URL + "/" + id, {
+      method: "DELETE",
+    }).then((res) => {
+      if (users) {
+        setUsers((prevElement) => {
+          return prevElement.filter((user) => user.id !== id);
+        });
+      }
+    });
+  };
+
+  const editUser = (e, id) => {
+    e.preventDefault();
+    setUserId(id);
+  };
 
   return (
     <>
@@ -54,13 +75,19 @@ const UserList = () => {
             {!loading && (
               <tbody className="bg-white">
                 {users?.map((user) => (
-                  <User user={user} key={user.id}></User>
+                  <User
+                    user={user}
+                    key={user.id}
+                    deleteUser={deleteUser}
+                    editUser={editUser}
+                  ></User>
                 ))}
               </tbody>
             )}
           </table>
         </div>
       </div>
+      <EditUser userId={userId} setResponseUser={setResponseUser}></EditUser>
     </>
   );
 };
