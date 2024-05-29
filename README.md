@@ -77,13 +77,11 @@ This is a full stack web application built with Next.js for the frontend, Spring
 
 ## Running the Application
 
-### Start the Frontend
-    ```
-    npm run dev
+1. Start the Frontend
+    > npm run dev
 
-### Start the Backend
-    ```
-    ./mvnw spring-boot:run
+2.  Start the Backend
+    > ./mvnw spring-boot:run
 
 ### Access Application
 - [http://localhost:3000](http://localhost:3000)
