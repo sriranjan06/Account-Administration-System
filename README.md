@@ -86,5 +86,5 @@ This is a full stack web application built with Next.js for the frontend, Spring
 ### Access Application
 - [http://localhost:3000](http://localhost:3000)
 
-### The is a modified code along of a nextjs fullstack application created by Shabbir Dawoodi for learning purposes. 
+### This is a modified code along of a nextjs fullstack application created by Shabbir Dawoodi for learning purposes. 
 The following is a link to his YouTube video - [https://www.youtube.com/watch?v=EHDlebVv6zw&t=16157s](https://www.youtube.com/watch?v=EHDlebVv6zw&t=16157s)
