@@ -5,12 +5,9 @@ This is a full stack web application built with Next.js for the frontend, Spring
 - [Technologies Used](#technologies-used)
 - [Prerequisites](#prerequisites)
 - [Setup Instructions](#setup-instructions)
-  - [Frontend Setup](#frontend-setup)
-  - [Backend Setup](#backend-setup)
 - [Application Functionalities](#application-functionalities)
 - [Google Authentication Setup](#google-authentication-setup)
 - [Running the Application](#running-the-application)
-- [License](#license)
 
 ## Technologies Used
 
@@ -89,15 +86,7 @@ This is a full stack web application built with Next.js for the frontend, Spring
     ./mvnw spring-boot:run
 
 ### Access Application
-[http://localhost:3000](http://localhost:3000)
+- [http://localhost:3000](http://localhost:3000)
 
 ### The is a modified code along of a nextjs fullstack application created by Shabbir Dawoodi for learning purposes. 
 The following is a link to his YouTube video - [https://www.youtube.com/watch?v=EHDlebVv6zw&t=16157s](https://www.youtube.com/watch?v=EHDlebVv6zw&t=16157s)
-
-## License
-
-This project is licensed under the MIT License.
-
-
-
-
