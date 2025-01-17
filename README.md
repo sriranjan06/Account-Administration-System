@@ -38,6 +38,7 @@ This is a full stack web application built with Next.js for the frontend, Spring
    NEXTAUTH_URL=http://localhost:3000
    GOOGLE_CLIENT_ID=your-google-client-id
    GOOGLE_CLIENT_SECRET=your-google-client-secret
+   NEXTAUTH_SECRET=your-nextauth-secret
 
 2. Configure application properties
    Update src/main/resources/application.properties with your MySQL database credentials:
